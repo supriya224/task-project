@@ -1,0 +1,123 @@
+
+
+
+/* Service classes here */
+.school-features-content{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.8rem;
+    
+}
+
+.school-features-content:hover{
+    
+}
+.hover-content{
+    position: relative;
+    cursor: pointer;
+   
+}
+.content-header{
+    background-color: lightsalmon;
+    position: absolute;
+    z-index: 1;
+    top: 48px;
+    width: 100%;
+    height: calc(100% - 4rem);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 1rem;
+    border-radius: 0.4rem;
+    display: flex;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: display 0.5s linear;
+    /* transition:  all 0.5s  ease-in-out;
+    -moz-transition: top 0.3s, right 0.3s, bottom 0.3s, left 0.3s;
+    -webkit-transition: top 0.3s, right 0.3s, bottom 0.3s, left 0.3s;
+    transition: top 0.3s, right 0.3s, bottom 0.3s, left 0.3s; */
+
+}
+.hover-content:hover > .content-header{
+    margin-top:221px;
+   height:69px;
+	padding-top: 10px;
+    /* -moz-transition: top 0.3s, right 0.3s, bottom 0.3s, left 0.3s;
+    -webkit-transition: top 0.3s, right 0.3s, bottom 0.3s, left 0.3s;
+    transition: top 0.3s, right 0.3s, bottom 0.3s, left 0.3s; */
+}
+
+
+.overlay-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.4rem;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+      
+  }
+  
+  .text {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    transition: translate(-50%, -50%);
+  }
+  
+  /*Initial overlay setup*/
+  .overlay {
+    position: absolute;
+    transition: all .5s ease;
+    opacity: 0;
+    background: #fe567e;
+  }
+  
+  /*All overlay fade-in*/
+  .overlay-container:hover .overlay {
+    opacity: 1;
+  }
+
+
+  
+  .overlay-cross {
+    height: 0;
+    width: 0;
+    bottom: 0;
+    left: 0;
+  }
+    
+  .overlay-container:hover .overlay-cross {
+    width: 100%;
+    height: 90%;
+  }
+ 
+
+.cssanimation, .cssanimation span {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.cssanimation span { display: inline-block }
+
+.fadeInBottom { animation-name: fadeInBottom }
+@keyframes fadeInBottom {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to { opacity: 1 }
+}
