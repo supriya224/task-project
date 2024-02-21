@@ -80,7 +80,7 @@ p {
 .overlay {
   margin-bottom: 1rem;
   position: absolute;
-  transition: all 0.5s ease;
+  transition: all 10s ease;
   opacity: 0;
   background: rgba(246, 73, 114, 0.9);
 }
@@ -104,7 +104,7 @@ p {
 
 .cssanimation,
 .cssanimation span {
-  animation-duration: 1s;
+  animation-duration: 0.5s;
   animation-fill-mode: both;
 }
 
